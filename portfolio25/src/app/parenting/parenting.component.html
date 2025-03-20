@@ -1,0 +1,36 @@
+<div class="parentingMain">
+    <img [@imageFadeAnimation]='state' (mouseover)="animateIntro()" id="backgroundImage" src="assets/images/Parenting/DSC_1555.jpg" alt="">
+    <div [@introAnimation]='state' class="introduction">
+        <p>Without a doubt, one of my favorite activities is being a Dad to my amazing daughter!</p>
+    </div>
+    <!-- <div id="favoritePics">
+        <p>Some of my favorite pictures:</p>
+    </div>
+    <div id="smallPicsDiv">
+        <img [@imageFadeAnimation]='state' class="smallPicsd" src="assets/images/Parenting/IMG_1709.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/0611101759b_01b.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_4278.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/DSCN1453.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_4296.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_4285.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/DSCN0219.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_0584.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_4311.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_1738.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_1695.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_0047.jpg" alt="">
+        <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_0055.jpg" alt="">
+    </div> -->
+    <div [@menuAnimation]='state' class="hobbies" (click)="animateMenu()">
+        <h2 id="otherInterests"> My other passions</h2>
+        <h3 style="cursor:pointer" id="close">Close X</h3>
+        <p>click to explore further</p>
+        <a style="cursor:pointer"><img (click)="home()" id="homePic" src="assets/images/IMG_3219.jpg" alt=""></a>
+        <a style="cursor:pointer"><img (click)="carpentry()" id="building" src="assets/images/IMG_0534.jpg" alt=""></a>
+        <a style="cursor:pointer"><img (click)="gaming()" id="gamingPic" src="assets/images/IMG_0334.jpg" alt=""></a>
+        <a id="home" (click)="home()" style="cursor:pointer">Home</a>
+        <a id="carpentry" (click)="carpentry()" style="cursor:pointer">Carpentry</a>
+        <a id="gaming" (click)="gaming()" style="cursor:pointer">Gaming</a>
+    </div>
+    <footer><button (click)="animateMenu()" style="cursor:pointer" id="footerButton">Other Interests</button> </footer>
+</div>

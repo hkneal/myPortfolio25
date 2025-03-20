@@ -1,0 +1,35 @@
+<div class="gamesMain">
+    <div class="videoDiv">
+        <!-- <video loop autoplay [@imageFadeAnimation]='state'> <source src="/assets/videos/Xbox Gameplay.mp4"></video> -->
+        <video autoplay loop controls [@imageFadeAnimation]='state'> <source src="/assets/videos/All Gameplay .mp4"></video>
+        <div class="description" [@imageFadeAnimation]='state'>
+            <h1>I Love Games! Who Doesn't?</h1>
+            <p class="descriptionParagraph">Although, I enjoy a good game of chess, here are some video games that I enjoy just as well: </p>
+            <ul>
+                <div class="threeColumn">
+                    <li>Mass Effect</li>
+                    <li>God of War</li>
+                    <li>Kindom Hearts</li>
+                    <li>Gears of War</li>
+                    <li>Dante's Inferno</li>
+                    <li>Titanfall</li>
+                    <li>Call of Duty</li>
+                    <li>Batman Arkham City</li>
+                    <li>Diablo</li>
+                </div>
+            </ul>
+        </div>
+        <div [@menuAnimation]='state' class="hobbies" (click)="animateMenu()">
+            <h2 id="otherInterests"> My other passions</h2>
+            <h3 style="cursor:pointer" id="close">Close X</h3>
+            <p>click to explore further</p>
+            <a style="cursor:pointer"><img (click)="home()" id="homePic" src="assets/images/IMG_3219.jpg" alt=""></a>
+            <a style="cursor:pointer"><img (click)="carpentry()" id="building" src="assets/images/IMG_0534.jpg" alt=""></a>
+            <a style="cursor:pointer"><img (click)="parenting()" id="parentingPic" src="assets/images/IMG_1370.jpg" alt=""></a>
+            <a id="home" (click)="home()" style="cursor:pointer">Home</a>
+            <a id="carpentry" (click)="carpentry()" style="cursor:pointer">Carpentry</a>
+            <a id="parenting" (click)="parenting()" style="cursor:pointer">Parenting</a>
+        </div>
+    </div>
+    <footer><button (click)="animateMenu()" style="cursor:pointer" id="footerButton">Other Interests</button></footer>
+</div>

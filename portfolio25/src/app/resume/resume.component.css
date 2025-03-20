@@ -1,0 +1,530 @@
+.main {
+    position: absolute;
+    margin-top: 4.28%;
+}
+
+.sidebar {
+    vertical-align: top;
+    width: 16%;
+    background-color: rgb(41, 48, 68, 1);
+    display: inline-block;
+    padding: 1%;
+    padding-bottom: 56%;
+}
+
+.page {
+    background-color: white;
+    width: 80%;
+    border: 2px solid lightgrey;
+    padding: .625em;
+    padding-right: 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(35, 38, 41);
+    display: inline-block;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(119, 117, 228);
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    color: #0E81B6;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+footer {
+    background-color: black;
+    height: 3.75em;
+    max-width: 100%;
+}
+
+.sideTitle {
+    text-align: right;
+    color: rgb(143, 144, 145);
+    color: rgb(184, 186, 187);
+    color: rgb(230, 230, 230);
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    width: 90%;
+    margin: .625em;
+    margin-left: .75em;
+    margin-top: .125em;
+}
+
+#profilePic {
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.profile {
+    width: 20%;
+    margin: 1%;
+    background-color: white;
+    border: 2px solid lightgrey;
+    font-size: 12pt;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(35, 38, 41);
+    display: inline-block;
+}
+
+.experience {
+    /* width: 55%; */
+    margin-top: 1%;
+    border: 2px solid lightgrey;
+    padding: 1%;
+    /* border-radius: 5px; */
+    /* box-shadow: 5px 5px 5px rgb(35, 38, 41); */
+    display: inline-block;
+    /* font-family: 'Open Sans', regular italic, sans-serif; */
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: fanwood, serif;
+    /* font-family: omnes-pro, sans-serif; */
+    font-style: normal;
+    font-weight: 100;
+}
+
+ul {
+    margin: 2%;
+    margin-top: 1%;
+}
+
+.items {
+    margin: 2%;
+}
+
+.icons {
+    margin: 7%;
+    margin-bottom: 0px;
+}
+
+.icons img {
+    margin-left: 10%;
+}
+
+.skills {
+    height: 97%;
+    width: 13%;
+    margin: 1%;
+    margin-top: 1%;
+    border: 19px solid lightgrey;
+    padding: 1%;
+    box-shadow: 5px 5px 5px rgb(35, 38, 41);
+    display: inline-block;
+    border-radius: 175px;
+    vertical-align: top;
+    background-color: rgb(157, 220, 245);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(126, 130, 134)), to(rgb(63, 64, 66)));
+    background-image: -webkit-linear-gradient(top, rgb(126, 130, 134), rgb(63, 64, 66));
+    background-image: -moz-linear-gradient(top, rgb(126, 130, 134), rgb(63, 64, 66));
+    background-image: linear-gradient(to bottom, rgb(126, 130, 134), rgb(63, 64, 66));
+}
+
+.skills2 {
+    height: 22rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 15%;
+    border: 5px solid lightgrey;
+    padding: 1%;
+    box-shadow: 5px 5px 5px rgb(35, 38, 41);
+    display: none;
+    border-radius: 175px;
+    vertical-align: top;
+    background-color: rgb(157, 220, 245);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(126, 130, 134)), to(rgb(63, 64, 66)));
+    background-image: -webkit-linear-gradient(top, rgb(126, 130, 134), rgb(63, 64, 66));
+    background-image: -moz-linear-gradient(top, rgb(126, 130, 134), rgb(63, 64, 66));
+    background-image: linear-gradient(to bottom, rgb(126, 130, 134), rgb(63, 64, 66));
+}
+
+.education,
+.recognitions {
+    text-align: center;
+    /* width: 27%; */
+    margin-top: 1%;
+    border: 2px solid lightgrey;
+    padding: 1%;
+    /* border-radius: 5px; */
+    /* box-shadow: 5px 5px 5px rgb(35, 38, 41); */
+    display: block;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: fanwood, serif;
+    /* font-family: omnes-pro, sans-serif; */
+    font-style: normal;
+    font-weight: 100;
+}
+
+.hrTop {
+    width: 75%;
+    margin-left: 10%;
+}
+
+#title {
+    color: white;
+    margin: 1%;
+    text-align: center;
+    /* color: rgb(5, 118, 238);
+    color: rgb(63, 64, 66); */
+    font-size: 1.5rem;
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    font-family: minerva-modern, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgb(41, 48, 68, 1);
+}
+
+#titleSkills {
+    color: white;
+    margin: 1%;
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+}
+
+#firstName {
+    color: rgb(47, 79, 114);
+    /* color: rgb(5, 118, 238); */
+    color: rgb(56, 96, 138);
+    color: rgb(44, 102, 160);
+    color: rgb(5, 118, 238);
+    color: rgb(140, 181, 225);
+    margin: 1%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    /* margin-left: 30%;
+    text-align: left; */
+    font-family: 'Open Sans', regular italic, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#lastName {
+    color: rgb(143, 144, 145);
+    color: rgb(184, 186, 187);
+    color: rgb(230, 230, 230);
+    margin: 1%;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    text-align: center;
+    font-family: 'Open Sans', regular italic, sans-serif;
+    display: inline-block;
+}
+
+#stackshare {
+    width: 90%;
+    margin: 1%;
+    margin-left: 8%;
+    margin-bottom: 1%;
+    margin-top: 0px;
+    display: block;
+}
+
+#stackshareA {
+    color: #0a12e2;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
+#innerCircle {
+    margin-top: 24px;
+    background-color: white;
+    /* width: 90%; */
+    height: 82%;
+    border-radius: 108px;
+    padding: 2%;
+    padding-bottom: 25%;
+}
+
+#java,
+#javascript,
+#python {
+    width: 75%;
+}
+
+#angular {
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#django,
+#nodejs {
+    margin-bottom: 0px;
+}
+
+#javascript {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#nodejs {
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+#codingDojo,
+#grambling,
+#ibm {
+    width: 10%;
+}
+
+#educationAndExperience {
+    width: 79%;
+    display: inline-block;
+}
+
+#downloadDiv {
+    text-align: center;
+    margin-top: 99%;
+    color: rgb(230, 230, 230);
+}
+
+#download {
+    width: 52%;
+}
+
+#downloadA {
+    color: white;
+    text-decoration: none;
+}
+
+#downloadA:active {
+    font-weight: bold;
+}
+
+#downloadA:hover {
+    font-weight: bold;
+    color: rgb(140, 181, 225);
+}
+
+@media only screen and (aspect-ratio: 1366/1024) {
+    .main {
+        margin-top: 6%;
+    }
+    .sidebar {
+        padding-bottom: 24%;
+    }
+}
+
+@media only screen and (aspect-ratio: 1024/1366) {
+    .main {
+        margin-top: 8%
+    }
+    #educationAndExperience {
+        width: 77%;
+    }
+    .sidebar {
+        padding-bottom: 74%;
+    }
+    #stackshareA {
+        margin-left: 17%;
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (aspect-ratio: 1024/768) {
+    .main {
+        margin-top: 6%
+    }
+    #educationAndExperience {
+        width: 77%;
+    }
+    .sidebar {
+        padding-bottom: 74%;
+    }
+    #stackshareA {
+        margin-left: 17%;
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (aspect-ratio: 768/1024) {
+    .main {
+        margin-top: 8%
+    }
+    .page {
+        width: 79%;
+    }
+    #educationAndExperience {
+        width: 76%;
+    }
+    .sidebar {
+        padding-bottom: 76%;
+    }
+    #stackshareA {
+        margin-left: 0%;
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (aspect-ratio: 736/414) {
+    .main {
+        margin-top: 7.3%
+    }
+    .page {
+        width: 79%;
+    }
+    .items p {
+        font-size: .7rem;
+    }
+    .sidebar {
+        padding-bottom: 42%;
+    }
+    ul {
+        margin: 5%;
+    }
+    li {
+        font-size: .7rem;
+    }
+    #educationAndExperience {
+        width: 75%;
+    }
+    #stackshareA {
+        margin-left: 13%;
+        font-size: .5rem;
+    }
+    #title {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (aspect-ratio: 667/375) {
+    .main {
+        margin-top: 7.4%
+    }
+    .page {
+        width: 79%;
+    }
+    .items p {
+        font-size: .7rem;
+    }
+    ul {
+        margin: 5%;
+    }
+    li {
+        font-size: .7rem;
+    }
+    .sidebar {
+        padding-bottom: 45%;
+    }
+    #educationAndExperience {
+        width: 75%;
+    }
+    #title {
+        font-size: 1rem;
+    }
+    #stackshareA {
+        margin-left: 0%;
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .sidebar {
+        padding-bottom: 27%;
+    }
+    .main {
+        margin-top: 10.7%;
+    }
+    .page {
+        width: 77%;
+    }
+    .items p {
+        font-size: .7rem;
+    }
+    ul {
+        margin: 5%;
+    }
+    li {
+        font-size: .7rem;
+    }
+    .skills {
+        display: none;
+    }
+    .skills2 {
+        display: block;
+    }
+    #educationAndExperience {
+        width: 96%;
+    }
+    #title {
+        font-size: 1rem;
+    }
+    #titleSkills {
+        font-size: .9rem;
+    }
+    #innerCircle {
+        height: 88%;
+        margin-top: 2%;
+        padding: 0%;
+    }
+    #stackshareA {
+        margin: 0;
+        font-size: .5rem;
+    }
+    #downloadA {
+        font-size: .8rem;
+    }
+    .sideTitle {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (aspect-ratio: 414/736) {
+    .sidebar {
+        padding-bottom: 30%;
+    }
+    #stackshareA {
+        margin-left: 13%;
+    }
+    .sideTitle {
+        font-size: .7rem;
+        margin-top: 2%;
+    }
+    .main {
+        margin-top: 9%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .main {
+        margin-top: 13.1%
+    }
+    .sideTitle {
+        font-size: .7rem;
+    }
+    .sidebar {
+        padding-bottom: 51%;
+    }
+    #stackshareA {
+        margin-left: 15%;
+    }
+}
