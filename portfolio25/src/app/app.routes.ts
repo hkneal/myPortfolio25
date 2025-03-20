@@ -13,7 +13,8 @@ export const routes: Routes = [{ path: '', pathMatch: 'full', component: AboutMe
     { path: 'carpentry', component: CarpentryComponent, data: { depth: 4 }},
     // { path: 'games', component: GamesComponent, data: { depth: 5 }},
     // { path: 'parenting', component: ParentingComponent, data: { depth: 6 }},
-    { path: 'home', pathMatch: 'full', redirectTo: '' }
+    { path: 'home', pathMatch: 'full', redirectTo: '' },
+    { path: '**', component: AboutMeComponent }
 ];
 
 @NgModule({

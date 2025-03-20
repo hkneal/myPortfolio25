@@ -46,7 +46,7 @@
                     <button style="cursor:pointer" (click)="showExperianDetails()" class="projectButton">More Details</button>
                     <div *ngIf="showexperianDetails" class="projectDetails" (click)="showExperianDetails()">
                         <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
-                        <p sytle="color:white">Designed and developed optimization algorithms and it’s respective dependency applications for Machine Learning (ML) feature and model registration.:</p>
+                        <p sytle="color:white">Designed and developed optimization algorithms and their respective dependency applications for Machine Learning (ML) feature and model registration.:</p>
                         <ul>
                             <li>Python, FastAPI</li>
                             <li>Postgres/SQLAlchemy/Marshmallow</li>
@@ -126,7 +126,7 @@
 
                 <div class="imageContainer">
                     <div class="imageDiv">
-                        <a href="https://public.dhe.ibm.com/software/data/sw-library/ims/IMS_Version_12_Performance_Summary.pdf"><img id="projectImage" style="cursor:pointer" src="assets/images/IMSV12.jpeg" alt=""></a>
+                        <a href="https://public.dhe.ibm.com/software/data/sw-library/ims/IMS_Version_12_Performance_Summary.pdf"><img id="projectImage" style="cursor:pointer" src="assets/images/IMSV12.png" alt=""></a>
                     </div>
                 </div>
                 <div class="projectDiv">
@@ -265,7 +265,7 @@
 
             </div>
             <!-- *********************************** -->
-            <a id="alexaTry" href="https://www.amazon.com/hiramk-Heres-a-Fun-Fact/dp/B072MVZJ7G/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1508476774&sr=1-1&keywords=here%27s+a+fun+fact"><img id="alexaImg" src="assets/images/AlexaSkill.png" alt=""> Try My Alexa Skill!</a>
+            <!-- <a id="alexaTry" href="https://www.amazon.com/hiramk-Heres-a-Fun-Fact/dp/B072MVZJ7G/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1508476774&sr=1-1&keywords=here%27s+a+fun+fact"><img id="alexaImg" src="assets/images/AlexaSkill.png" alt=""> Try My Alexa Skill!</a> -->
         </div>
     </div>
     <footer [ngClass]="{'footerExpanded': showexperianDetails || shownoyoDetails || showweshapeDetails || showibmredbooks || showimsperformance }" [@footerAnimation]='state'></footer>
