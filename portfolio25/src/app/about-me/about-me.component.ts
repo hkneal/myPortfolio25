@@ -57,11 +57,9 @@ export class AboutMeComponent implements OnInit {
   showexperianDetails: Boolean = false;
   shownoyoDetails: Boolean = false;
   showweshapeDetails: Boolean = false;
-  showbikeDetails: Boolean = false;
-  showbookDetails: Boolean = false;
-  showhawaii: Boolean = false;
+  showimsperformance: Boolean = false;
+  showibmredbooks: Boolean = false;
   showhobbies: Boolean = false;
-  showshorturl: Boolean = false;
 
   constructor(private _router: Router) { }
 
@@ -83,17 +81,14 @@ export class AboutMeComponent implements OnInit {
     this._router.navigate(['/carpentry']);
   }
 
-  gaming(): void {
-    this._router.navigate(['/games']);
-  }
-
-  parenting(): void {
-    this._router.navigate(['/parenting']);
+  showHobbies(): void {
+    this.showhobbies = this.showhobbies ? false : true;
   }
 
   showWeshapeDetails(): void {
     this.showweshapeDetails = this.showweshapeDetails ? false : true;
   }
+
   showNoyoDetails(): void {
     this.shownoyoDetails = this.shownoyoDetails ? false : true;
   }
@@ -102,19 +97,12 @@ export class AboutMeComponent implements OnInit {
     this.showexperianDetails = this.showexperianDetails ? false : true;
   }
 
-  showBikeDetails(): void {
-    this.showbikeDetails = this.showbikeDetails ? false : true;
+  showIBMRedbooks(): void {
+    this.showibmredbooks = this.showibmredbooks ? false : true;
   }
-  showBookDetails(): void {
-    this.showbookDetails = this.showbookDetails ? false : true;
+
+  showIMSPerformance(): void {
+    this.showimsperformance = this.showimsperformance ? false : true;
   }
-  showHawaii(): void {
-    this.showhawaii = this.showhawaii ? false : true;
-  }
-  showHobbies(): void {
-    this.showhobbies = this.showhobbies ? false : true;
-  }
-  showShortUrl(): void {
-    this.showshorturl = this.showshorturl ? false : true;
-  }
+
 }
