@@ -1,0 +1,38 @@
+<div class="background"></div>
+<header>
+    <div class='homeTag'>
+        <a [routerLink]="['/']">Hiram K. Neal</a>
+    </div>
+    <nav>
+        <div class='routeTag'>
+            <a [routerLink]="['/home']">Home</a>
+        </div>
+        <div class='routeTag'>
+            <a [routerLink]="['/resume']">Resume </a>
+        </div>
+        <!-- <div class='routeTag'>
+            <a (click)="projectScroll()" style="cursor:pointer">Projects</a>
+        </div> -->
+        <div class='routeTag'>
+            <a (click)="contactAnimate()" style="cursor:pointer">Contact Me</a>
+        </div>
+    </nav>
+    <div [@contactAnimation]='state' class='contact'>
+        <p>
+            Check out my code for this website and some of my other projects on GitHub and please feel free to connect with me on LinkedIn or via email!
+        </p>
+        <hr>
+        <a class="navA" href="https://linkedin.com/in/hiram-neal"><img id="linkedin" src="assets/images/linkedin.png" alt="https://linkedin.com/in/hiram-neal">https://linkedin.com/in/hiram-neal</a>
+        <a class="navA" href="https://github.com/hkneal"><img id="github" src="assets/images/github-10-512.gif" alt="https://github.com/hkneal">https://github.com/hkneal</a>
+        <a class="navA" href="mailto:hiramk&#64;comcast.net"><img id="email" src="assets/images/emailMe.png">hiramk&#64;comcast.net</a>
+        <hr>
+        <p id="contactClose" (click)="contactAnimate()" style="text-align:center; cursor:pointer">Close X</p>
+    </div>
+</header>
+<main>
+    <!-- <img src="assets/images/IMG_3222.jpg" alt="">
+    <img id="smile" src="assets/images/IMG_1221.jpg" alt=""> -->
+    <div id="component" class="animateComponent" [@routeAnimation]="getDepth(myOutlet)">
+        <router-outlet #myOutlet="outlet"></router-outlet>
+    </div>
+</main>

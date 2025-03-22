@@ -33,6 +33,7 @@ testem.log
 /typings
 confighns3.json
 *.numbers
+*.pem
 
 # e2e
 /e2e/*.js

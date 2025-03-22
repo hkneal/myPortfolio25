@@ -1,0 +1,428 @@
+main {
+    background-color: white;
+}
+
+.background {
+    background-color: black;
+    height: 8%;
+    width: 100%;
+    position: absolute;
+}
+
+header {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.49);
+    max-width: 100%;
+    max-height: 8%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.animateComponent {
+    position: relative;
+}
+
+.animateComponent>* {
+    display: block;
+}
+
+.contact {
+    background-color: rgb(129, 130, 129);
+    background-color: black;
+    width: 25%;
+    margin-left: 75%;
+    margin-top: 1%;
+    display: inline-block;
+}
+
+.contact p {
+    padding: 5%;
+    color: white;
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: quasimoda-2, sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-weight: 400;
+}
+
+.contact hr {
+    width: 80%;
+    margin: 6%;
+    margin-left: 10%;
+    border-color: rgb(63, 64, 66);
+}
+
+#contactClose:hover {
+    color: rgb(129, 130, 129);
+}
+
+a {
+    margin: .625em;
+    color: inherit;
+    color: #B9B8B8;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    /* font-family: 'Open Sans', regular italic, sans-serif; */
+    /* font-family: quasimoda-2, sans-serif; */
+    /* font-family: quasimoda, sans-serif; */
+    font-family: minerva-modern, sans-serif;
+    font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+a:hover,
+a:active {
+    color: white;
+    color: #B9B8B8;
+}
+
+.homeTag {
+    display: inline-block;
+    margin-left: 4%;
+    vertical-align: middle;
+}
+
+.homeTag a {
+    font-size: 2rem;
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* font-family: p22-marcel-script-pro, sans-serif; */
+}
+
+.navA {
+    margin: 0px;
+    font-size: 1rem;
+    display: block;
+}
+
+.routeTag,
+#name,
+nav {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 59%;
+    margin-top: 1.2%;
+}
+
+#linkedin {
+    max-width: 14.4%;
+    vertical-align: middle;
+    margin-left: 7%;
+    margin-right: 5px;
+}
+
+#github {
+    max-width: 15%;
+    vertical-align: middle;
+    margin: 10px;
+    margin-left: 7%;
+    margin-right: 5px;
+    /* margin-bottom: .3125rem; */
+}
+
+#email {
+    max-width: 15.2%;
+    margin: 10px;
+    margin-left: 7%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1030px) {
+    nav {
+        margin-left: 32%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+    header {
+        max-height: 13%;
+    }
+    .homeTag {
+        margin-left: .625em;
+    }
+    .contact {
+        width: 65%;
+        margin-left: 35%;
+    }
+    .contact p {
+        padding: .625em;
+    }
+    #linkedin,
+    #github,
+    #email {
+        max-width: 7.4%;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 1024/1366) {
+    .background {
+        height: 6%;
+    }
+    header {
+        max-height: 6%;
+    }
+    nav {
+        margin-left: 48%;
+    }
+    .homeTag {
+        margin-left: 4%;
+        margin-top: 1%;
+    }
+    .contact {
+        max-width: 40%;
+        margin-left: 60%;
+        margin-top: 2.3%;
+    }
+}
+
+@media only screen and (aspect-ratio: 2560/1600) {
+    a {
+        font-size: 2rem;
+    }
+    header {
+        width: 100%;
+    }
+}
+
+@media only screen and (aspect-ratio: 1600/2560) {
+    a {
+        font-size: 1.5rem;
+    }
+    .background {
+        height: 4%;
+    }
+    header {
+        max-height: 4%;
+        width: 100%;
+    }
+    nav {
+        margin-left: 57%;
+        margin-top: 2.2%
+    }
+    .homeTag {
+        margin-left: 4%;
+        margin-top: 1%;
+        font-size: 2rem;
+    }
+    .contact {
+        width: 40%;
+        margin-left: 60%;
+        margin-top: .9%;
+    }
+    .contact p {
+        font-size: 1.5rem;
+    }
+    .navA {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (aspect-ratio: 1366/1024) {
+    nav {
+        margin-top: 2.2%;
+    }
+}
+
+@media only screen and (aspect-ratio: 1024/768) {
+    header {
+        max-height: 8%
+    }
+    nav {
+        margin-top: 2.2%;
+        margin-left: 50%;
+    }
+    .background {
+        height: 8%
+    }
+    .contact {
+        max-width: 45%;
+        margin-left: 55%;
+    }
+}
+
+@media only screen and (aspect-ratio: 736/414) {
+    .background {
+        height: 13%;
+    }
+}
+
+@media only screen and (aspect-ratio: 768/1024) {
+    header {
+        max-height: 6%
+    }
+    nav {
+        margin-top: 2.2%;
+        margin-left: 32%;
+    }
+    .background {
+        height: 6%
+    }
+    .contact {
+        max-width: 45%;
+        margin-left: 55%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+    .background {
+        height: 13%;
+    }
+    .contact hr {
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    nav {
+        margin-left: 49%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    nav {
+        margin-left: 34%;
+        margin-bottom: 2%;
+    }
+    .routeTag a {
+        font-size: .7rem;
+    }
+    .contact hr {
+        margin: 3%;
+    }
+    .background {
+        height: 13%;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    nav {
+        margin-left: 32%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        max-height: 6%;
+    }
+    .background {
+        height: 6%;
+    }
+    #linkedin {
+        max-width: 5%;
+        vertical-align: bottom;
+        margin-left: 4%;
+        margin-top: .5rem;
+    }
+    #github {
+        max-width: 5%;
+        vertical-align: bottom;
+        margin-left: .625em;
+        margin-bottom: .3125rem;
+    }
+    #email {
+        max-width: 5%;
+        margin-left: .625em;
+    }
+    nav {
+        margin-left: 10%;
+        vertical-align: bottom;
+        margin-bottom: .5375rem;
+    }
+    .routeTag a {
+        font-size: .7rem;
+    }
+    header {
+        padding-bottom: 0em;
+    }
+    .homeTag {
+        margin-left: 10px;
+    }
+    .homeTag a {
+        font-size: 1.5rem;
+    }
+    .contact {
+        max-width: 65%;
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (aspect-ratio: 736/414) {
+    .contact hr {
+        margin: 3%;
+    }
+}
+
+@media only screen and (aspect-ratio: 414/736) {
+    .contact {
+        margin-top: 1%;
+    }
+    nav {
+        margin-left: 24%;
+    }
+    header {
+        max-height: 6.5%;
+    }
+    .background {
+        height: 6.5%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    nav {
+        margin-left: 2%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+    .navA {
+        font-size: .9rem;
+    }
+    .contact {
+        max-width: 63%;
+        margin-left: 37%;
+        margin-top: 0px;
+    }
+    #linkedin,
+    #github,
+    #email {
+        max-width: 8%;
+    }
+}
+
+@media only screen and (aspect-ratio: 360/640) {
+    .homeTag a {
+        font-size: 1rem;
+    }
+    .contact {
+        max-width: 65%;
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (aspect-ratio: 320/568) {
+    .homeTag a {
+        font-size: 1rem;
+    }
+    .contact p,
+    .contact a {
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (aspect-ratio: 568/320) {
+    .homeTag a {
+        font-size: 1.5rem;
+    }
+    .contact p,
+    .contact a {
+        font-size: .5rem;
+    }
+}

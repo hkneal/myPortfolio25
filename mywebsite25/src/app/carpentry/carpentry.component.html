@@ -1,0 +1,71 @@
+<div class="treehouseMain">
+    <div class="treehouse">
+        <h1 id="treehouseH1" (mouseenter)="animateTreehouse()">Treehouse</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (mouseenter)="animateEntertainmentCenter()">Entertainment Center</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (mouseenter)="animateBeds()">Custom Beds</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (mouseenter)="animateMenu()">Other Interests</h1>
+    </div>
+    <div class="treehouseMobile">
+        <h1 id="treehouseH1" (click)="animateTreehouse()">Treehouse</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (click)="animateEntertainmentCenter()">Television Center</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (click)="animateBeds()">Custom Beds</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (click)="animateMenu()">Other Interests</h1>
+    </div>
+    <div [@treehouseAnimation]='state' class="pictureViewer">
+        <img src="assets/images/Treehouse/DSCN0256.jpg" alt="">
+        <img src="assets/images/Treehouse/DSCN0257.jpg" alt="">
+        <img src="assets/images/Treehouse/DSCN0252.jpg" alt="">
+        <img src="assets/images/Treehouse/IMG_0011.jpg" alt="">
+        <img src="assets/images/Treehouse/DSCN0250.jpg" alt="">
+        <img src="assets/images/Treehouse/IMG_0047.jpg" alt="">
+        <img src="assets/images/Treehouse/IMG_0533.jpg" alt="">
+        <img src="assets/images/Treehouse/IMG_0551.jpg" alt="">
+        <img src="assets/images/Treehouse/IMG_0167.jpg" alt="">
+        <img src="assets/images/Treehouse/IMG_0669.jpg" alt="">
+        <p>Treehouse Project</p>
+    </div>
+    <div [@entertainmentAnimation]='state' class="pictureViewer">
+        <img src="assets/images/entertainment_center/IMG_2332.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_2361.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_2385.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_2419.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_2433.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_2415.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_2437.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_2447.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_3384.jpg" alt="">
+        <img src="assets/images/entertainment_center/IMG_3385.jpg" alt="">
+        <p id="entertainmentP">Entertainment Center Project</p>
+    </div>
+    <div [@bedsAnimation]='state' class="pictureViewer">
+        <img src="assets/images/Custom_beds/DSCN1542.jpg" alt="">
+        <img src="assets/images/Custom_beds/DSCN1546.jpg" alt="">
+        <img src="assets/images/Custom_beds/IMG_0021.jpg" alt="">
+        <img src="assets/images/Custom_beds/IMG_0015.jpg" alt="">
+        <img src="assets/images/Custom_beds/DSCN1588.jpg" alt="">
+        <img src="assets/images/Custom_beds/IMG_0868.jpg" alt="">
+        <img src="assets/images/Custom_beds/IMG_0894.jpg" alt="">
+        <img src="assets/images/Custom_beds/IMG_0984.jpg" alt="">
+        <img src="assets/images/Custom_beds/IMG_0882.jpg" alt="">
+        <img src="assets/images/Custom_beds/IMG_0918.jpg" alt="">
+        <p>Reinventing my daughter's room, twice now...</p>
+    </div>
+    <div [@menuAnimation]='state' class="hobbies" (click)="animateMenu()">
+        <h2 id="otherInterests"> My other passions</h2>
+        <h3 style="cursor:pointer" id="close">Close X</h3>
+        <p>click to explore further</p>
+        <a style="cursor:pointer"><img (click)="home()" id="home" src="assets/images/IMG_3219.jpg" alt=""></a>
+        <img id="gamingPic" src="assets/images/IMG_0334.jpg" alt="">
+        <img id="parentingPic" src="assets/images/IMG_1370.jpg" alt="">
+        <a id="homeTag" (click)="home()" style="cursor:pointer">Home</a>
+        <p id="gaming">Gaming</p>
+        <p id="parenting">Parenting</p>
+    </div>
+    <footer></footer>
+</div>

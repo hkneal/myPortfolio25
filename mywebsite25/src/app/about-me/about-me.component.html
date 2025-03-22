@@ -1,0 +1,256 @@
+<main>
+    <!-- <img src="assets/images/IMG_0843.jpg" alt=""> -->
+    <div class="items">
+        <!-- <h2>Welcome to my website!</h2>
+        <h2>I am</h2> -->
+        <h1>Welcome to my website!</h1>
+    </div>
+    <img src="assets/images/IMG_3222.jpg" alt="">
+    <div class="whoAmI">
+        <h1>Who Am I?</h1>
+    </div>
+    <div class="generalDescription">
+        <p>I'm a <em>Software Engineer</em> with a dedicated focus toward <em>Responsive Web Design & Web Development</em>. I have a comprehensive background and experience with the <em>Python & MEAN</em> full stacks, a proven ability to develop skills quickly,
+            and a desire to continue to learn. I'm also a dedicated volunteer with a passion, and a belief in, helping and understanding others.
+        </p>
+        <img id="newspaperPic" src="assets/images/IMG_0517-min.jpeg" alt="">
+        <button *ngIf="!showhobbies" id="hobbiesButton" style="cursor:pointer" (click)="showHobbies()">What do I do when I'm not coding?</button>
+        <div *ngIf="showhobbies" class="hobbies" (click)="showHobbies()">
+            <h2 id="otherInterests"> My other passions</h2>
+            <h3 style="cursor:pointer" id="close">Close X</h3>
+            <a style="cursor:pointer"><img (click)="carpentry()" id="building" src="assets/images/IMG_0534.jpg" alt=""></a>
+            <img id="gamingPic" src="assets/images/IMG_0334.jpg">
+            <img id="parentingPic" src="assets/images/IMG_1370.jpg" alt="">
+            <a id="carpentry" (click)="carpentry()" style="cursor:pointer">Carpentry</a>
+            <p id="parenting">Video Games / Chess</p>
+            <p id="parenting">Parenting</p>
+        </div>
+    </div>
+    <div [@slideAnimation]='state' class="alexa">
+        <p id="alexaDescription">Technology has always been a passion of mine. As part of the <a href="http://mashable.com/2015/05/21/oregon-trail-generation/#USjHIA4YEPq9">"Oregon Trail Generation"</a>, I grew up playing the popular video game and I recall trying to code my
+            own version. The enjoyment of playing that game and the satisfaction of seeing my code actually do what I exepected it to do (e.g., coding my name in BASIC to scroll diagonally across the screen), led me into Software Development. I continue
+            to have that passion and I'm able to express it and find those, "that's cool!" moments, through web design and development. My technical proficiency now spans a wide range of technologies including Python & Java programming languages, Django, FastAPI, & Flask Backend Frameworks,
+            and Angular, JavaScript, TypeScript, front end frameworks.  I'm proficient AWS & Google Cloud Services and I've worked with NoSQL, SQL, and Hiearchical data bases.
+        </p>
+        <div class="projects" [ngClass]="{'projectsExpanded': showexperianDetails || shownoyoDetails || showweshapeDetails || showibmredbooks || showimsperformance}">
+            <h1 style="color:rgb(63, 64, 66)">Recent Work Experience and Personal Projects</h1>
+            <div class="desktopView">
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.experian.com"><img id="projectImage" style="cursor:pointer" src="assets/images/experian.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">Experian - Title: Python Developer (Python  / FastAPI / Docker / Jenkins)<br>
+                        Python business logic algorithm and code development. Streamlining development via tool development and optimization. Integrated RESTful APIs and built deployment pipelines for workflow applications.</p>
+                    <button style="cursor:pointer" (click)="showExperianDetails()" class="projectButton">More Details</button>
+                    <div *ngIf="showexperianDetails" class="projectDetails" (click)="showExperianDetails()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Designed and developed optimization algorithms and their respective dependency applications for Machine Learning (ML) feature and model registration.:</p>
+                        <ul>
+                            <li>Python, FastAPI</li>
+                            <li>Postgres/SQLAlchemy/Marshmallow</li>
+                            <li>Kubernetes/Jenkins</li>
+                            <li>Amazon Web Services (AWS)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.noyo.com"><img id="projectImage" style="cursor:pointer" src="assets/images/noyo_tech-min.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">Noyo Technologies - Title: Engineer (Python Backend / Retool Javascript)<br>
+                    Designed & developed platform application automation and validation.  Built RESTful APIs and platform to carrier integrations.</p>
+                    <button style="cursor:pointer" (click)="showNoyoDetails()" class="projectButton">More Details</button>
+                    <div *ngIf="shownoyoDetails" class="projectDetails" (click)="showNoyoDetails()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Improved the platform to carrier synchronization rates through automation, validation, platform to carrier integrations, and RESTful APIs. Technologies Used:</p>
+                        <ul>
+                            <li>Python, Flask , FastAPI</li>
+                            <li>Postgres/SQLAlchemy/Marshmallow</li>
+                            <li>Retool/Metabase</li>
+                            <li>Google Cloud Platform (GCP)</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.weshape.com"><img id="projectImage" style="cursor:pointer" src="assets/images/weshape-min.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">Weshape - Title: Lead Backend Engineer (Python/Django)<br>
+                    Python/Django + Angular Web application developer.  Designed and built responsive mobile web applications with CRM integrations & RESTful APIs using web design best practices.</p>
+                    <button style="cursor:pointer" (click)="showWeshapeDetails()" class="projectButton">More Details</button>
+                    <div *ngIf="showweshapeDetails" class="projectDetails" (click)="showWeshapeDetails()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Coded & Designed a video transcoding and delivery algorithm that provides custmoized workout videos from a selection of over 4000 videos. Technologies Used:</p>
+                        <ul>
+                            <li>Python/Django</li>
+                            <li>AWS (APIGateway, Lambda, S3, etc.)</li>
+                            <li>AWS Elemental Media Convert</li>
+                            <li>Angular</li>
+                            <li>Django Restframework</li>
+                            <li>Django Serverless Deployment via Zappa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg246898.pdf"><img id="projectImage" style="cursor:pointer" src="assets/images/IBMRedbooks.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">IBM - Title: Software Engineer (IBM Redbooks Contributor )<br>
+                        Coded & developed workload scenarios, environments, and drivers to effectively evaluate new and existing code functionality. These evaluations provided meaningful content for technical publications</p>
+                    <button style="cursor:pointer" (click)="showIBMRedbooks()" class="projectButton">More Details</button>
+                    <div *ngIf="showibmredbooks" class="projectDetails" (click)="showIBMRedbooks()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Conducted pre-release z/OS System Logger evaluations and performance evaluation data.</p>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://public.dhe.ibm.com/software/data/sw-library/ims/IMS_Version_12_Performance_Summary.pdf"><img id="projectImage" style="cursor:pointer" src="assets/images/IMSV12.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">IBM - Title: Software Engineer (Team Lead - IMS Performance)<br>
+                        Evaluated the peformance of new IMS functionality and provided technical documentation of IMS's performance metrices.</p>
+                    <button style="cursor:pointer" (click)="showIMSPerformance()" class="projectButton">More Details</button>
+                    <div *ngIf="showimsperformance" class="projectDetails" (click)="showIMSPerformance()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Performance Monitoring and Development Tools Used:</p>
+                        <ul>
+                            <li>IMS Performance Analyzer (IMSPA)</li>
+                            <li>Resource Measurement Facility (RMF)</li>
+                            <li>Visual Performance Analyzer (VPA)</li>
+                            <li>JMeter</li>
+                            <li>Wireshark</li>
+                            <li>Rational Developer for System Z</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- *********************************** -->
+            <div class="mobileView">
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.experian.com"><img id="projectImage" style="cursor:pointer" src="assets/images/experian.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">Experian - Title: Python Developer (Python  / FastAPI / Docker / Jenkins)<br>
+                        Python business logic algorithm and code development. Streamlining development via tool development and optimization. Integrated RESTful APIs and built deployment pipelines for workflow applications.</p>
+                    <button style="cursor:pointer" (click)="showExperianDetails()" class="projectButton">More Details</button>
+                    <div *ngIf="showexperianDetails" class="projectDetails" (click)="showExperianDetails()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Designed and developed optimization algorithms and it’s respective dependency applications for Machine Learning (ML) feature and model registration.:</p>
+                        <ul>
+                            <li>Python, FastAPI</li>
+                            <li>Postgres/SQLAlchemy/Marshmallow</li>
+                            <li>Kubernetes/Jenkins</li>
+                            <li>Amazon Web Services (AWS)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.noyo.com"><img id="projectImage" style="cursor:pointer" src="assets/images/noyo_tech-min.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">Noyo Technologies - Title: Engineer (Python Backend / Retool Javascript)<br>
+                    Designed & developed platform application automation and validation.  Built RESTful APIs and platform to carrier integrations.</p>
+                    <button style="cursor:pointer" (click)="showNoyoDetails()" class="projectButton">More Details</button>
+                    <div *ngIf="shownoyoDetails" class="projectDetails" (click)="showNoyoDetails()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Improved the platform to carrier synchronization rates through automation, validation, platform to carrier integrations, and RESTful APIs. Technologies Used:</p>
+                        <ul>
+                            <li>Python/Flask</li>
+                            <li>Postgres/SQLAlchemy/Marshmallow</li>
+                            <li>Retool/Metabase</li>
+                            <li>Google Cloud Platform (GCP)</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.weshape.com"><img id="projectImage" style="cursor:pointer" src="assets/images/weshape-min.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">Weshape - Title: Lead Backend Engineer (Python/Django)<br>
+                    Python/Django + Angular Web application developer.  Designed and built responsive mobile web applications with CRM integrations & RESTful APIs using web design best practices.</p>
+                    <button style="cursor:pointer" (click)="showWeshapeDetails()" class="projectButton">More Details</button>
+                    <div *ngIf="showweshapeDetails" class="projectDetails" (click)="showWeshapeDetails()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Coded & Designed a video transcoding and delivery algorithm that provides custmoized workout videos from a selection of over 4000 videos. Technologies Used:</p>
+                        <ul>
+                            <li>Python/Django</li>
+                            <li>AWS (APIGateway, Lambda, S3, etc.)</li>
+                            <li>AWS Elemental Media Convert</li>
+                            <li>Angular</li>
+                            <li>Django Restframework</li>
+                            <li>Django Serverless Deployment via Zappa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg246898.pdf"><img id="projectImage" style="cursor:pointer" src="assets/images/IBMRedbooks.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">IBM - Title: Software Engineer (IBM Redbooks Contributor )<br>
+                        Coded & developed workload scenarios, environments, and drivers to effectively evaluate new and existing code functionality. These evaluations provided meaningful content for technical publications</p>
+                    <button style="cursor:pointer" (click)="showIBMRedbooks()" class="projectButton">More Details</button>
+                    <div *ngIf="showibmredbooks" class="projectDetails" (click)="showIBMRedbooks()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Conducted pre-release z/OS System Logger evaluations and performance evaluation data.</p>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <div class="imageDiv">
+                        <a href="https://public.dhe.ibm.com/software/data/sw-library/ims/IMS_Version_12_Performance_Summary.pdf"><img id="projectImage" style="cursor:pointer" src="assets/images/IMSV12.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">IBM - Title: Software Engineer (Team Lead - IMS Performance)<br>
+                        Evaluated the peformance of new IMS functionality and provided technical documentation of IMS's performance metrices.</p>
+                    <button style="cursor:pointer" (click)="showIMSPerformance()" class="projectButton">More Details</button>
+                    <div *ngIf="showimsperformance" class="projectDetails" (click)="showIMSPerformance()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Performance Monitoring and Development Tools Used:</p>
+                        <ul>
+                            <li>IMS Performance Analyzer (IMSPA)</li>
+                            <li>Resource Measurement Facility (RMF)</li>
+                            <li>Visual Performance Analyzer (VPA)</li>
+                            <li>JMeter</li>
+                            <li>Wireshark</li>
+                            <li>Rational Developer for System Z</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- *********************************** -->
+            <!-- <a id="alexaTry" href="https://www.amazon.com/hiramk-Heres-a-Fun-Fact/dp/B072MVZJ7G/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1508476774&sr=1-1&keywords=here%27s+a+fun+fact"><img id="alexaImg" src="assets/images/AlexaSkill.png" alt=""> Try My Alexa Skill!</a> -->
+        </div>
+    </div>
+    <footer [ngClass]="{'footerExpanded': showexperianDetails || shownoyoDetails || showweshapeDetails || showibmredbooks || showimsperformance }" [@footerAnimation]='state'></footer>
+</main>
